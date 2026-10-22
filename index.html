@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>New City Church</title>
+  <title>Never Lost Church</title>
   <link rel="icon" type="image/svg+xml" href="favicon/newcitychurch-fav-logo.ico">
   <link rel="stylesheet" href="index.css">
   <script src="index.js" defer></script>
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="index.html">NEW CITY CHURCH</a>
+    <a class="logo" href="index.html"><img src="images/Never-Lost-Church-PNG-Logo.PNG" alt=""><span>NEVER LOST CHURCH</span></a>
     <button class="menu-button" aria-expanded="false" aria-controls="navigation">Menu</button>
     <nav id="navigation">
       <a href="calendar.html">Calendar</a>
@@ -24,14 +24,41 @@
   </header>
   <main>
     <section class="hero">
-      <video autoplay muted loop playsinline preload="auto" aria-label="New City Church gathering">
+      <video autoplay muted loop playsinline preload="auto" aria-label="Never Lost Church gathering">
         <source src="videos/hero-video.mp4" type="video/mp4">
       </video>
       <div class="hero-content">
         <p>CHICAGO · TORONTO · MONTERREY</p>
-        <h1>Welcome to<br>New City Church</h1>
+        <h1>Welcome to<br>Never Lost Church</h1>
         <a class="button" href="next-steps.html">Plan your visit</a>
       </div>
+    </section>
+    <section class="media-flix" aria-labelledby="media-flix-title">
+      <div class="media-heading">
+        <div>
+          <p class="label">WATCH ANYTIME</p>
+          <h2 id="media-flix-title">Media <span>Flix</span></h2>
+          <p class="media-intro">Messages, worship, and stories to meet you right where you are.</p>
+        </div>
+        <label class="media-search">
+          <span class="visually-hidden">Search videos</span>
+          <input id="media-search" type="search" placeholder="Search videos..." autocomplete="off">
+          <span aria-hidden="true">⌕</span>
+        </label>
+      </div>
+      <div class="media-filters" role="group" aria-label="Filter videos by category">
+        <button class="media-filter active" type="button" data-category="All" aria-pressed="true">All</button>
+        <button class="media-filter" type="button" data-category="Messages" aria-pressed="false">Messages</button>
+        <button class="media-filter" type="button" data-category="Worship" aria-pressed="false">Worship</button>
+        <button class="media-filter" type="button" data-category="Stories" aria-pressed="false">Stories</button>
+        <button class="media-filter" type="button" data-category="More" aria-pressed="false">More</button>
+      </div>
+      <div class="media-row-heading">
+        <h3>Featured videos</h3>
+        <span>5 videos</span>
+      </div>
+      <div class="media-row" id="media-row" aria-live="polite"></div>
+      <p class="media-empty" id="media-empty" hidden>No videos match your search. Try another title or category.</p>
     </section>
     <section class="section">
       <p class="label">OUR HEART</p>
@@ -60,9 +87,19 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="logo" href="index.html">NEW CITY CHURCH</a>
+    <a class="logo" href="index.html">NEVER LOST CHURCH</a>
     <p>Bringing people to Jesus and Jesus to people.</p>
-    <small>© <span data-year></span> New City Church</small>
+    <small>© <span data-year></span> Never Lost Church</small>
   </footer>
+  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
+    <div class="video-modal-backdrop" data-close-video></div>
+    <div class="video-modal-content">
+      <div class="video-modal-header">
+        <h2 id="video-modal-title">Now playing</h2>
+        <button class="video-modal-close" type="button" aria-label="Close video player" data-close-video>×</button>
+      </div>
+      <div class="video-frame" id="video-frame"></div>
+    </div>
+  </div>
 </body>
 </html>
