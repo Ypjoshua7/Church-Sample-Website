@@ -1,0 +1,735 @@
+{
+  "version": "1.0",
+  "tool": "website_one_page",
+  "seed_url": "https://www.peoplechurch.org/",
+  "seed_origin": "https://www.peoplechurch.org:443",
+  "seed_host": "www.peoplechurch.org",
+  "final_url": "https://www.peoplechurch.org/",
+  "final_host": "www.peoplechurch.org",
+  "origin_lock_mode": "host_only",
+  "captured_at": "2026-10-21T23:50:50.034571Z",
+  "base_href_used": false,
+  "base_href_value": null,
+  "budgets": {
+    "max_pages": 1,
+    "max_assets": 200,
+    "max_assets_per_page": 200,
+    "max_redirects": 5,
+    "max_css_import_depth": 2,
+    "max_html_bytes": 2097152,
+    "max_css_bytes": 1048576,
+    "max_asset_bytes": 104857600,
+    "max_total_asset_bytes": 52428800
+  },
+  "budgets_used": {
+    "pages": 1,
+    "assets": 0,
+    "total_asset_bytes": 0
+  },
+  "counts": {
+    "html_pages": 1,
+    "assets_total": 173,
+    "assets_included": 0,
+    "assets_excluded": 173
+  },
+  "excluded": [
+    {
+      "url": "https://events.framer.com/script?v=2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/fragmentmono/v6/4iCr6K5wfMRRjxp0DA6-2CLnB41HhrUI.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/fragmentmono/v6/4iCr6K5wfMRRjxp0DA6-2CLnB45HhrUI.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/fragmentmono/v6/4iCr6K5wfMRRjxp0DA6-2CLnB4NHhg.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RNeQIl5na-1Q.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RNeQIlJna-1Q.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RNeQIlZna-1Q.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RNeQImpna.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RNeQInpna-1Q.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/05KsVHGDmqXSBXM4yRZ65P8i0s.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/0iDmxkizU9goZoclqIqsV5rvETU.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/1ZFS7N918ojhhd0nQWdj3jz4w.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/2A4Xx7CngadFGlVV4xrO06OBHY.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/3ZmXbBKToJifDV9gwcifVd1tEY.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/43sJ6MfOPh1LCJt46OvyDuSbA6o.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/5A3Ce6C9YYmCjpQx9M4inSaKU.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/5HcVoGak8k5agFJSaKa4floXVu0.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/6FI2EneKzM3qBy5foOZXey7coCA.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/6mJuEAguuIuMog10gGvH5d3cl8.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/7lw0VWkeXrGYJT05oB3DsFy8BaY.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/8yoV9pUxquX7VD7ZXlNYKQmkmk.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DYHjxG0qXjopUuruoacfl5SA.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DolVirEGb34pEXEp8t8FQBSK4.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/F3kdpd2N0cToWV5huaZjjgM.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/FNfhX3dt4ChuLJq2PwdlxHO7PU.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/H89BbHkbHDzlxZzxi8uPzTsp90.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Ii21jnSJkulBKsHHXKlapi7fv9w.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/NHHeAKJVP0ZWHk5YZnQQChIsBM.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/P2Bw01CtL0b9wqygO0sSVogWbo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Qx95Xyt0Ka3SGhinnbXIGpEIyP4.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/QxmhnWTzLtyjIiZcfaLIJ8EFBXU.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/V3j1L0o5vPFKe26Sw4HcpXCfHo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/WZ367JPwf9bRW6LdTHN8rXgSjw.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/X5hj6qzcHUYv7h1390c8Rhm6550.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/ZRl8AlxwsX1m7xS1eJCiSPbztg.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/b8ezwLrN7h2AUoPEENcsTMVJ0.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/cugnVhSraaRyANCaUtI5FV17wk.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/ePuN3mCjzajIHnyCdvKBFiZkyY0.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/efTfQcBJ53kM2pB1hezSZ3RDUFs.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/g0c8vEViiXNlKAgI4Ymmk3Ig.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/gQhNpS3tN86g8RcVKYUUaKt2oMQ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/ia3uin3hQWqDrVloC1zEtYHWw.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/jn4BtSPLlS0NDp1KiFAtFKiiY0o.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/ky8ovPukK4dJ1Pxq74qGhOqCYI.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/mYcqTSergLb16PdbJJQMl9ebYm4.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/mkY5Sgyq51ik0AMrSBwhm9DJg.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/mvNEIBLyHbscgHtwfsByjXUz3XY.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/nhSQpBRqFmXNUBY2p5SENQ8NplQ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/otTaNuNpVK4RbdlT7zDDdKvQBA.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/pKRFNWFoZl77qYCAIp84lN1h944.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/qrVgiXNd6RuQjETYQiVQ9nqCk.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/r0mv3NegmA0akcQsNFotG32Las.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/s7NH6sl7w4NU984r5hcmo1tPSYo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/u6gJwDuwB143kpNK1T1MDKDWkMc.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vFzuJY0c65av44uhEKB6vyjFMg.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vvNSqIj42qeQ2bvCRBIWKHscrc.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/vxBnBhH8768IFAXAb4Qf6wQHKs.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/wb1G5q3SaQPZFOHOe5Uf8bXPM.mp4",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/wccHG0r4gBDAIRhfHiOlq6oEkqw.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/wx5nfqEgOXnxuFaxB0Mn9OhmcZA.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/xYYWaj7wCU5zSQH0eXvSaS19wo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/assets/zSsEuoJdh8mcFVk976C05ZfQr8.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/0MZRVyJ5hQA5gR5m8vx7QHGt2Y.jpg?width=2160&height=2700",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/3TMbzx8h2sJwPBcluaPMWcKK0Bk.jpg?scale-down-to=512&width=2500&height=1667",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/3TMbzx8h2sJwPBcluaPMWcKK0Bk.jpg?width=2500&height=1667",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/3xlMSAoQHcOzDQbQ6lWxmMt6FHM.jpeg?scale-down-to=1024&width=1500&height=1952",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/3xlMSAoQHcOzDQbQ6lWxmMt6FHM.jpeg?width=1500&height=1952",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/5FlGQelYacJEvEkwgCTQ90gFQXQ.jpg?width=4000&height=4621",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/5bLX7U8GbOluPL0IWrl3EAQQXnA.png",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/932FzoPIWCRzrtqJnPkCP5xcu4.jpg?width=2160&height=2700",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/9Ab0Nuxo1sE2x9OzjMYEUXfhoI.jpg?width=2160&height=2700",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/CBO67EAFyHtB8CIDvH6h9qKgSQ.jpg?scale-down-to=1024&width=1500&height=1965",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/CBO67EAFyHtB8CIDvH6h9qKgSQ.jpg?width=1500&height=1965",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/DEWDMsflYqvqHmM1kILK6cc.jpg?scale-down-to=1024&width=2931&height=3908",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/DEWDMsflYqvqHmM1kILK6cc.jpg?width=2931&height=3908",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/DY02eSljZLThpb4wdfFX3LV4B08.png?width=3840&height=2160",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/DzL5MCtzj03IVDVc4AYCZmAxRmM.jpg?scale-down-to=1024&width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/DzL5MCtzj03IVDVc4AYCZmAxRmM.jpg?width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/ENQBSCSSbWDfphMwg4MrTW0.jpg?scale-down-to=1024&width=4000&height=4550",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/ENQBSCSSbWDfphMwg4MrTW0.jpg?width=4000&height=4550",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/FeRJ1R0WoQfDncIP22s24vA1r1U.jpeg?scale-down-to=512&width=2048&height=1545",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/FeRJ1R0WoQfDncIP22s24vA1r1U.jpeg?width=2048&height=1545",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/I1JIq2tg5usqlDvD0ziI1PlpMpA.png?width=2160&height=2700",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/ItuOpEGI9jDad1P3Nzt5EOdgBQ.png",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/JjrqaM9vpTrPxfXGePO8rUA9gI.jpeg?scale-down-to=512&width=3838&height=2559",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/JjrqaM9vpTrPxfXGePO8rUA9gI.jpeg?width=3838&height=2559",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/KKzM2CDWzY6oYtY9EwIvi3Jp4CM.jpg?scale-down-to=1024&width=4000&height=4534",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/KKzM2CDWzY6oYtY9EwIvi3Jp4CM.jpg?width=4000&height=4534",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/NaEujVxKhepfzkIQDCxh0br99Co.png",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/NaEujVxKhepfzkIQDCxh0br99Co.png?width=899&height=905",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/Qq5LmlG0oQGEoaUGtKEPuonrs.jpg?width=4000&height=4513",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/QuhIkRyEuJjbMHgL41SsBOphGeo.jpg?scale-down-to=1024&width=4000&height=4478",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/QuhIkRyEuJjbMHgL41SsBOphGeo.jpg?width=4000&height=4478",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/SiY413HsOm3UBT90NAyUdrlepA.jpeg?scale-down-to=1024&width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/SiY413HsOm3UBT90NAyUdrlepA.jpeg?width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/V6Ej00sPuHETMSER7gFeG1aCTA.jpeg?scale-down-to=1024&width=1500&height=2031",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/V6Ej00sPuHETMSER7gFeG1aCTA.jpeg?width=1500&height=2031",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/VenJ1UQGrFkLz9TR76yqD5wfQ4U.jpg?scale-down-to=1024&width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/VenJ1UQGrFkLz9TR76yqD5wfQ4U.jpg?width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/feWqYVOjD6Cgpkk1z2TU17qX2Ds.png?width=1920&height=1080",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/gVYN0JOWThgfjP1bReAH722y6D4.png?scale-down-to=512&width=5536&height=4160",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/gVYN0JOWThgfjP1bReAH722y6D4.png?width=5536&height=4160",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/kEKelxlXE1h0P29TQcvwuMLfSTE.jpg?width=2160&height=2700",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/nwoFTnGwSxzFrBFrHHTDfSR3UGU.jpg?scale-down-to=1024&width=4000&height=6000",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/nwoFTnGwSxzFrBFrHHTDfSR3UGU.jpg?width=4000&height=6000",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/uUSiQlMIjgDdqPTBHYtlfDdpqQ.jpg?scale-down-to=1024&width=3928&height=5892",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/uUSiQlMIjgDdqPTBHYtlfDdpqQ.jpg?width=3928&height=5892",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/x2bgGcL9eUaGbROg2gCUfrN1rGg.png?scale-down-to=512&width=4800&height=1213",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/x2bgGcL9eUaGbROg2gCUfrN1rGg.png?width=4800&height=1213",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/y4bNLPWMpxx8sINs23DQh7FsI.jpg?scale-down-to=1024&width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/y4bNLPWMpxx8sINs23DQh7FsI.jpg?width=1500&height=2250",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/yCdfrpvDj9QXX7rcVR31qL63nU.jpg?scale-down-to=1024&width=3923&height=5885",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/images/yCdfrpvDj9QXX7rcVR31qL63nU.jpg?width=3923&height=5885",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/sites/7fHYCOKY3iagOaAkZvfzPW/script_main.Bm5rZncx.mjs",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/2UC2M25RQ2XRSGCBJRQ2G5SNXCROECQB/QJT3T33NN372363FJY5EO5D63GKDKLDK/IOAFMDAPNX3S6OL2GYQQJ2FFJIRSVB3N.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/5ICO57VJIN252OT5L2KLEIPW754DTLAO/ZU64SLR2IEO66N27IVY5Z6JJJRTJECJK/TCTRLNEXANFIGSFCZTGQL7PZ5362GYK6.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/5SZVFDB7V52TI6ULVC6J3WQZQCIZVDV5/ODYPSTCUDMKSTYIPTV4CLQ7URIK7XYBJ/YS3VPNVO4B3TOJMEXDGFZQ4TLZGGSRZC.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/A54N3N7J5AY6YOPYJKLHF5VH7G7HSSUN/ERWIWIB434FMFHQFSSBD233EP3C62HOI/TOHQHMLIEIPKVF2JPM6SVKXFYGO5G2TJ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/AGVRET5QOXLLPCSORPLO44GJZRG35CBJ/AYMVXN4GPC7UMERGPHSKTQ4F226GXMHG/LBVFQZO23LFQX5ZQMIZGDF6ODT2YI7T2.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/BLNB4FAQFNK56DWWNF7PMGTCOTZHOEII/ST3WKSSDMBK2MIQQO3MAVYWLF4FTOLFV/6IN5WOLRCYP4G4MOCOHOMXNON6Q7MDAR.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/CDEBEFT2R7XKNGXSBBLZGMY4MMHZG75P/HEVKDGQCYDZ7Z6CDVR2ZQGBCTUD6ZARH/BKWEE3VKGTFABE37K2DTH625VUSN2N35.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/FQHNKZEV35SAMFWVFCFSORJXUNHNILL4/X4YCR4COAQTK5XB6JCDDBS7Q33AQWUAE/J7XVDQ2IJENINPUAVBDJNH3VEXVDSPQQ.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/HBNTRIISA5MEXGL5WPYI7CV2HIWTDV3Q/YDPDINVT673XLXNSTMLG4JNCZZMVVNPN/Y7SCNZJOT2MW5ADSGOFLDGH4TNL4JCQY.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/LVPXCMXCWY3V7PSXRMGRQUJDAS2DT47E/BPEVRT2HG7PPVVUS7A67MZQQZW6LR6A5/A7AS3UPAGLC7MDVC67SBNTE5FGF2Z2RG.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/NHPGVFYUXYXE33DZ75OIT4JFGHITX5PE/PSUTMASCDJTVPERDYJZPN23BVUFUCQIF/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/OYB4CXKJQXKTNSLJMTDQOIVUL2V5EL7S/WYO2P7DQVV5RNXGMCUO2HL4RJP4VFUAS/6XPIMU23OJVRY676OG5YVJMWEHWICATX.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/QMRBNVYKDJEZ66DA22SPWH5EVVYACHCU/ZHMXHHA546NDNEHJN5RPZX5KISJY5CWF/C6VLICDGQWYKV6YT65TM5G3OVN4AOZBN.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/XVUY2PHYBA6KMN4RMEMJPHQSTKCQ267G/UICOQA6KCSHFOSCPYDVVDNNCDKYFXHJB/O34WRFYO7JNWEBBA2LRV2XYRUSYXYDKH.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://framerusercontent.com/third-party-assets/fontshare/wf/ZME55SZ3XN6FJ6WZ26BVFLFSAZ5I2VWW/YETVURK7HXO34ARWAMVG6MSPWALMBOUD/SMQAIKPHV4D6DU77XSDVYN543XEEYX6R.woff2",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://peoplechurch.b-cdn.net/Home%20Videos/Web%20Header%20Video%209x16.mp4",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://thenewvanguard.b-cdn.net/Other%20Videos/GoyVt8j9tp2MvYDTUU2AfSeA2Y4.mp4",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://thenewvanguard.b-cdn.net/Other%20Videos/Web%20Header%20Video%2016x9.mp4",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://thenewvanguard.b-cdn.net/Other%20Videos/Web%20Header%20Video%209x16.mp4",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VMZN3XMRLW",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://youtu.be/78d7aCfZKFc?si=theY0-RvdPEStPZi",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://youtu.be/eYIf62rOvL8?si=kDIrx3ZRdxx24_rg",
+      "reason": "cross_origin_blocked"
+    },
+    {
+      "url": "https://youtu.be/q245KS6nhCc?si=FEjKFnOHMXeHzxsY",
+      "reason": "cross_origin_blocked"
+    }
+  ],
+  "mapping": {},
+  "heuristics": {
+    "script_src_count": 3,
+    "meaningful_elements": 170,
+    "text_content_length": 3650
+  }
+}
