@@ -20,8 +20,8 @@ const mediaVideos = [
   { title: "Stories of Hope", category: "Stories" },
   { title: "A Church for Everyone", category: "More" }
 ];
-const youtubeUrl = "https://youtu.be/nHvg18GPUuE?si=ZUwH1MbyHrOAQoPr";
-const videoId = "nHvg18GPUuE";
+const youtubeUrl = "https://youtu.be/GfVCLiWjIRg?si=Gxb-Ymwm2uJGLSp6";
+const videoId = "GfVCLiWjIRg";
 const mediaRow = document.querySelector("#media-row");
 const mediaSearch = document.querySelector("#media-search");
 const mediaEmpty = document.querySelector("#media-empty");
