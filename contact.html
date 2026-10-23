@@ -3,26 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | New City Church</title>
-  <link rel="icon" type="image/svg+xml" href="favicon/newcitychurch-fav-logo.ico">
+  <title>Contact | Worship Him Church</title>
+  <link rel="icon" type="image/x-icon" href="favicon/WorshipHimChurch-Logo-PNG-ico.ico">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="contact.css">
   <script src="index.js" defer></script>
   <script src="contact.js" defer></script>
 </head>
 <body>
-  <header class="header"><a class="logo" href="index.html">NEW CITY CHURCH</a><button class="menu-button" aria-expanded="false" aria-controls="navigation">Menu</button><nav id="navigation"><a href="calendar.html">Calendar</a><a href="next-steps.html">Next Steps</a><a href="groups.html">Groups</a><a href="ministries.html">Ministries</a><a href="who-we-are.html">Who We Are</a><a href="contact.html">Contact</a><a href="giving.html">Giving</a></nav></header>
+  <header class="header"><a class="logo" href="index.html"><img src="images/WorshipHimChurch-Logo-PNG.png" alt=""><span>Worship Him Church</span></a><button class="menu-button" aria-expanded="false" aria-controls="navigation">Menu</button><nav id="navigation"><a href="calendar.html">Calendar</a><a href="next-steps.html">Next Steps</a><a href="groups.html">Groups</a><a href="ministries.html">Ministries</a><a href="who-we-are.html">Who We Are</a><a href="contact.html">Contact</a><a href="giving.html">Giving</a></nav></header>
   <main>
     <section class="page-banner"><p class="label">WE'D LOVE TO HEAR FROM YOU</p><h1>Contact</h1></section>
     <section class="content">
-      <h2>Connect with New City Church.</h2>
+      <h2>Connect with Worship Him Church.</h2>
       <p>Have a question or want to get connected? Visit us at a Sunday gathering or explore the service times for your city.</p>
+      <div class="church-contact-details">
+        <p><strong>Call or text:</strong> <a href="tel:+19562021805">956-202-1805</a></p>
+        <p><strong>Address:</strong> <a href="https://maps.google.com/?q=22531+FM+508+Harlingen+Texas+78550" target="_blank" rel="noopener noreferrer">22531 FM 508, Harlingen, Texas 78550</a></p>
+      </div>
       <a class="button contact-link" href="calendar.html">See service times</a>
+      <section class="coffee-card" aria-labelledby="coffee-title">
+        <p class="label">LET'S CONNECT</p>
+        <h2 id="coffee-title">Coffee with Pastor Gilbert De Leon</h2>
+        <p>Send a note to arrange a coffee. Every field is optional. Your messaging app will open with your note ready to review and send to 956-202-1805.</p>
+        <form id="coffee-form">
+          <div class="coffee-fields">
+            <div class="coffee-field">
+              <label for="coffee-first-name">First name <span>(optional)</span></label>
+              <input id="coffee-first-name" name="firstName" type="text" autocomplete="given-name">
+            </div>
+            <div class="coffee-field">
+              <label for="coffee-last-name">Last name <span>(optional)</span></label>
+              <input id="coffee-last-name" name="lastName" type="text" autocomplete="family-name">
+            </div>
+            <div class="coffee-field">
+              <label for="coffee-email">Email <span>(optional)</span></label>
+              <input id="coffee-email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="coffee-field coffee-description">
+              <label for="coffee-description">Description <span>(optional)</span></label>
+              <textarea id="coffee-description" name="description" rows="5" placeholder="What would you like Pastor Gilbert to know?"></textarea>
+            </div>
+          </div>
+          <button class="button" type="submit">Text about coffee</button>
+          <p class="coffee-status" id="coffee-status" aria-live="polite"></p>
+          <a class="coffee-sms-link" id="coffee-sms-link" hidden>Open your messaging app</a>
+        </form>
+      </section>
       <h2 class="faq-title">Common questions</h2>
       <details><summary>Where do you meet?</summary><p>We gather in Chicago, Toronto, and Monterrey. Visit the calendar page for service times.</p></details>
       <details><summary>How can I get involved?</summary><p>Explore groups and ministries, or take a look at the next steps page.</p></details>
     </section>
   </main>
-  <footer class="footer"><a class="logo" href="index.html">NEW CITY CHURCH</a><p>Bringing people to Jesus and Jesus to people.</p><small>© <span data-year></span> New City Church</small></footer>
+  <footer class="footer"><div class="footer-brand"><a class="logo" href="index.html">Worship Him Church</a><p>Bringing people to Jesus and Jesus to people.</p><address class="footer-contact"><a href="tel:+19562021805">956-202-1805</a><a href="https://maps.google.com/?q=22531+FM+508+Harlingen+Texas+78550" target="_blank" rel="noopener noreferrer">22531 FM 508<br>Harlingen, Texas 78550</a></address></div><nav class="footer-navigation" aria-label="Footer navigation"><a href="calendar.html">Calendar</a><a href="next-steps.html">Next Steps</a><a href="groups.html">Groups</a><a href="ministries.html">Ministries</a><a href="who-we-are.html">Who We Are</a><a href="contact.html">Contact</a><a href="giving.html">Giving</a></nav><div class="footer-social" aria-label="Social media"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.2c-.3 0-1.4-.2-2.6-.2-2.6 0-4.3 1.6-4.3 4.5v2.1H7v3.2h2.8V21h3.6z"/></svg></a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a></div><small>© <span data-year></span> Worship Him Church</small></footer>
 </body>
 </html>
