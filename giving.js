@@ -6,6 +6,6 @@ amountButtons.forEach((button) => {
     amountButtons.forEach((item) => item.classList.remove("selected"));
     button.classList.add("selected");
     const amount = button.dataset.amount === "other" ? "another amount" : `$${button.dataset.amount}`;
-    amountNotice.textContent = `Selected ${amount}. Contact New City Church about online giving.`;
+    amountNotice.textContent = `Selected ${amount}. Contact Worship Him Church about online giving.`;
   });
 });
