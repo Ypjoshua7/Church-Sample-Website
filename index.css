@@ -23,13 +23,22 @@ h2 { font-size: clamp(32px, 5vw, 56px); line-height: 1.1; }
 .cards article { background: #2a302c; padding-bottom: 20px; }
 .cards img { width: 100%; height: 250px; object-fit: cover; }
 .cards h3, .cards p { margin: 12px 18px; }
+.harlingen-location { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; margin: 35px 0; color: var(--color-ink); background: #f1ece2; border-radius: 5px; }
+.harlingen-location > img { width: 100%; height: 100%; min-height: 320px; object-fit: cover; }
+.harlingen-location-info { align-self: center; padding: clamp(22px, 4vw, 42px); }
+.harlingen-location-info > h3 { margin: 0 0 18px; font-size: 28px; }
+.service-times { display: grid; gap: 12px; }
+.service-times article { padding: 14px 16px; background: var(--color-background); border-left: 4px solid var(--color-primary); }
+.service-times h4, .service-times p { margin: 0; }
+.service-times h4 { font-size: 16px; }
+.service-times p { margin-top: 4px; }
 .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: center; }
 .feature img { width: 100%; max-height: 480px; object-fit: cover; }
 .callout { color: white; text-align: center; background: #333a34; }
 .footer { padding: 30px 8%; color: white; background: #151815; }
 .footer .logo { display: inline-block; }
 .footer small { color: #aaa; }
-.page-banner { min-height: 430px; display: flex; flex-direction: column; justify-content: end; padding: 130px 8% 55px; color: white; background: linear-gradient(#1118, #1118), url("images/image-one.png") center / cover; }
+.page-banner { min-height: 430px; display: flex; flex-direction: column; justify-content: end; padding: 130px 8% 55px; color: white; background: linear-gradient(#1118, #1118), url("images/outside-church-design-image.jpeg") center / cover; }
 .page-banner h1 { margin: 0; }
 .content { width: min(1000px, 84%); margin: 0 auto; padding: 60px 0; }
 .content h2 { margin-top: 0; }
@@ -46,61 +55,40 @@ h2 { font-size: clamp(32px, 5vw, 56px); line-height: 1.1; }
 .content summary { cursor: pointer; font-weight: bold; }
 .content details p { margin: 12px 0 0; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.media-flix { overflow: hidden; padding: 72px 7% 78px; color: #f7f6f2; background: #111311; }
-.media-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; }
-.media-heading .label { margin: 0 0 8px; }
-.media-heading h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); }
-.media-heading h2 span { color: #d5ad78; }
-.media-intro { margin: 10px 0 0; color: #b8bab6; }
-.media-search { position: relative; display: flex; align-items: center; width: min(100%, 280px); }
-.media-search input { width: 100%; padding: 12px 42px 12px 15px; color: white; background: #242724; border: 1px solid #454a45; border-radius: 4px; font: inherit; }
-.media-search input:focus-visible, .media-filter:focus-visible, .media-card:focus-visible, .video-modal-close:focus-visible { outline: 2px solid #d5ad78; outline-offset: 3px; }
-.media-search > span:last-child { position: absolute; right: 14px; color: #d5ad78; font-size: 24px; line-height: 1; }
-.media-filters { display: flex; gap: 10px; overflow-x: auto; margin: 30px 0 26px; padding: 2px 2px 8px; scrollbar-width: thin; }
-.media-filter { flex: 0 0 auto; padding: 8px 17px; color: #e6e6e2; background: transparent; border: 1px solid #454a45; border-radius: 24px; cursor: pointer; font: inherit; transition: color .2s, background .2s, border-color .2s; }
-.media-filter:hover, .media-filter.active { color: #171815; background: #d5ad78; border-color: #d5ad78; }
-.media-row-heading { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
-.media-row-heading h3 { margin: 0; font-size: 21px; }
-.media-row-heading span { color: #9c9e99; font-size: 13px; }
-.media-row { display: grid; grid-auto-columns: minmax(230px, 1fr); grid-auto-flow: column; gap: 18px; overflow-x: auto; padding: 8px 4px 24px; scroll-snap-type: x mandatory; scrollbar-color: #555 #222; scrollbar-width: thin; }
-.media-card { position: relative; min-width: 0; overflow: hidden; color: inherit; background: #202320; border-radius: 5px; text-decoration: none; scroll-snap-align: start; transition: transform .25s ease, box-shadow .25s ease; }
-.media-card:hover { z-index: 1; transform: translateY(-6px) scale(1.025); box-shadow: 0 14px 32px #0009; }
-.media-card-image { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: #333; }
-.media-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
-.media-card:hover .media-card-image img { transform: scale(1.06); }
-.media-card-image::after { position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, #0008); content: ""; }
-.media-play { position: absolute; z-index: 1; top: 50%; left: 50%; display: grid; width: 48px; height: 48px; place-items: center; color: #171815; background: #d5ad78; border-radius: 50%; opacity: 0; transform: translate(-50%, -40%); transition: opacity .2s, transform .2s; }
-.media-card:hover .media-play, .media-card:focus-visible .media-play { opacity: 1; transform: translate(-50%, -50%); }
-.media-card-info { padding: 13px 15px 16px; }
-.media-card-category { margin: 0 0 5px; color: #d5ad78; font-size: 11px; font-weight: bold; letter-spacing: 1.4px; text-transform: uppercase; }
-.media-card-title { margin: 0; font-size: 17px; line-height: 1.35; }
-.media-empty { padding: 18px 0; color: #b8bab6; }
-.video-modal[hidden] { display: none; }
-.video-modal { position: fixed; z-index: 10; inset: 0; display: grid; place-items: center; padding: 24px; }
-.video-modal-backdrop { position: absolute; inset: 0; background: #000d; }
-.video-modal-content { position: relative; width: min(100%, 960px); overflow: hidden; background: #171815; border-radius: 8px; box-shadow: 0 18px 70px #0009; }
-.video-modal-header { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; }
-.video-modal-header h2 { margin: 0; font-size: 17px; }
-.video-modal-close { width: 40px; height: 40px; color: white; background: transparent; border: 0; cursor: pointer; font-size: 32px; line-height: 1; }
-.video-frame { aspect-ratio: 16 / 9; background: #000; }
-.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
-body.video-modal-open { overflow: hidden; }
+.sermon-video { overflow: hidden; padding: 72px 7% 78px; color: #f7f6f2; background: #62776c; }
+.sermon-video-inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); align-items: center; gap: clamp(28px, 6vw, 72px); max-width: 1200px; margin: 0 auto; }
+.sermon-video-player { overflow: hidden; aspect-ratio: 16 / 9; background: #014421; border-radius: 5px; }
+.sermon-video-play { position: relative; display: block; width: 100%; height: 100%; overflow: hidden; padding: 0; background: #62776c; border: 0; cursor: pointer; }
+.sermon-video-play:focus-visible { outline: 2px solid var(--color-background); outline-offset: -4px; }
+.sermon-video-image { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 9; background: #014421; }
+.sermon-video-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.sermon-video-play:hover .sermon-video-image img { transform: scale(1.04); }
+.media-play { position: absolute; top: 50%; left: 50%; display: grid; width: 56px; height: 56px; place-items: center; color: whitesmoke; background: #62776c; border-radius: 50%; transform: translate(-50%, -50%); transition: transform .2s ease; }
+.sermon-video-play:hover .media-play { transform: translate(-50%, -50%) scale(1.08); }
+.sermon-video-player iframe { display: block; width: 100%; height: 100%; border: 0; }
+.sermon-video-info .label { margin: 0 0 8px; color: var(--color-accent); }
+.sermon-video-info h2 { margin: 0; font-size: clamp(38px, 5vw, 58px); }
+.sermon-video-subtitle { margin: 14px 0 8px; font-size: 22px; }
+.sermon-video-description { margin: 0; color: #d2d9cf; }
+.sermon-social { display: flex; gap: 12px; margin-top: 24px; }
+.sermon-social a { display: grid; width: 42px; height: 42px; place-items: center; color: var(--color-background); border: 1px solid #e8e1d4a6; border-radius: 50%; transition: color .2s, background .2s, border-color .2s; }
+.sermon-social svg { width: 19px; height: 19px; fill: currentColor; }
+.sermon-social a:hover { color: white; background: #014421; border-color: white; }
+.sermon-social a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
 @media (max-width: 760px) {
   .header { align-items: flex-start; }
   .menu-button { display: block; padding: 8px 12px; color: white; background: transparent; border: 1px solid white; }
   .header nav { display: none; position: absolute; top: 65px; left: 0; right: 0; padding: 18px 6%; background: #171a18; }
   .header nav.open { display: grid; gap: 14px; }
-  .cards, .feature { grid-template-columns: 1fr; }
+  .cards, .feature, .harlingen-location { grid-template-columns: 1fr; }
+  .harlingen-location > img { min-height: 0; max-height: 340px; }
   .simple-cards { grid-template-columns: 1fr; }
   .section { padding: 55px 7%; }
   .hero { min-height: 600px; }
   .page-banner { min-height: 360px; padding-right: 7%; padding-left: 7%; }
-  .media-flix { padding: 52px 6% 58px; }
-  .media-heading { align-items: stretch; flex-direction: column; gap: 18px; }
-  .media-search { width: 100%; }
-  .media-row { grid-auto-columns: minmax(78vw, 1fr); gap: 13px; margin-right: -6vw; }
-  .media-play { opacity: 1; transform: translate(-50%, -50%); }
-  .video-modal { padding: 12px; }
+  .sermon-video { padding: 52px 6% 58px; }
+  .sermon-video-inner { grid-template-columns: 1fr; gap: 28px; }
+  .sermon-video-info h2 { font-size: clamp(38px, 9vw, 48px); }
 }
 @media (max-width: 760px) {
   .header { align-items: center; }
@@ -114,12 +102,15 @@ body.video-modal-open { overflow: hidden; }
 }
 
 :root {
-  --color-primary: #679267;
-  --color-background: #e8e1d4;
-  --color-accent: #bfaf9e;
-  --color-ink: #26352b;
+  --color-primary: #627769;
+  --color-background: #fbf5e6;
+  --color-accent: #c2d0bd;
+  --color-ink: #62776c;
 }
 body { color: var(--color-ink); background: var(--color-background); }
+.announcement-bar { display: flex; min-height: 44px; align-items: center; justify-content: center; padding: 8px 6%; color: white; background: var(--color-primary); text-align: center; }
+.announcement-bar p { margin: 0; font-size: clamp(11px, 3.5vw, 14px); font-weight: bold; line-height: 1.4; white-space: nowrap; }
+.header { top: 44px; }
 .header .logo img { flex: 0 0 48px; width: 48px; height: 48px; object-fit: contain; filter: none; }
 .footer { display: grid; grid-template-columns: minmax(220px, 1.2fr) 1fr auto; align-items: center; gap: 26px; padding: 38px 8%; color: var(--color-background); background: var(--color-primary); }
 .footer .logo { display: inline-flex; }
@@ -136,35 +127,27 @@ body { color: var(--color-ink); background: var(--color-background); }
 .footer-social svg { width: 19px; height: 19px; fill: currentColor; }
 .footer small { grid-column: 1 / -1; padding-top: 15px; color: #f5f1e9; border-top: 1px solid #e8e1d466; }
 .footer-navigation a:hover, .footer-social a:hover { color: white; }
-.footer-social a:hover { background: #557d55; border-color: white; }
+.footer-social a:hover { background: #014421; border-color: white; }
 .footer a:focus-visible, .header a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
 .footer-social a { border-color: #e8e1d4a6; }
 .footer-brand p, .footer small { color: #f5f1e9; }
 .footer small { border-color: #e8e1d466; }
-.footer-social a:hover { background: #557d55; border-color: white; }
+.footer-social a:hover { background: #014421; border-color: white; }
 .footer-navigation a:hover, .footer-social a:hover { color: white; }
-.media-flix { background: #314b35; }
-.media-heading h2 span, .media-card-category, .media-search > span:last-child { color: var(--color-accent); }
-.media-filter:hover, .media-filter.active, .media-play { color: var(--color-ink); background: var(--color-accent); border-color: var(--color-accent); }
-.media-search input { background: #263b2b; border-color: var(--color-primary); }
-.media-search input:focus-visible, .media-filter:focus-visible, .media-card:focus-visible, .video-modal-close:focus-visible { outline-color: var(--color-background); }
-.media-card, .media-card-info { background: #263b2b; }
-.media-card-title, .media-row-heading h3 { color: var(--color-background); }
-.media-row-heading span, .media-intro, .media-empty { color: #d2d9cf; }
 .label { color: var(--color-primary); }
 .hero-content p { color: var(--color-background); }
 .button, .content .contact-link, .content .giving-link, .content > .button {
   color: white;
   background: var(--color-primary);
 }
-.button:hover, .content .contact-link:hover, .content .giving-link:hover, .content > .button:hover { background: #557d55; }
+.button:hover, .content .contact-link:hover, .content .giving-link:hover, .content > .button:hover { background: #014421; }
 .choice-list button.selected { color: white; background: var(--color-primary); }
 .dark { background: var(--color-primary); }
 .cards article { color: var(--color-ink); background: #f1ece2; }
-.callout { background: #557d55; }
+.callout { background: #014421; }
 .simple-card, .content details, .mission-values { background: var(--color-background); }
-.notice { color: #557d55; }
-.page-banner { background-color: #557d55; }
+.notice { color: var(--color-primary); }
+.page-banner { background-color: var(--color-primary); }
 .header nav a:hover { color: var(--color-accent); }
 .footer a:focus-visible, .header a:focus-visible, .footer-social a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
 @media (max-width: 760px) {
@@ -177,3 +160,14 @@ body { color: var(--color-ink); background: var(--color-background); }
   .footer-social { justify-content: center; }
   .footer small { grid-column: auto; width: 100%; }
 }
+
+.hero, .sermon-video, .section, .page-banner, .content {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.hero { height: auto; }
+.section:not(.feature) { display: flex; flex-direction: column; justify-content: center; }
+.section.feature { align-content: center; }
+.sermon-video { display: grid; align-items: center; }
+.page-banner { justify-content: center; }
+.content { display: flex; flex-direction: column; justify-content: center; }
