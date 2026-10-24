@@ -9,6 +9,7 @@
   <script src="index.js" defer></script>
 </head>
 <body>
+  <div class="announcement-bar"><p>Coming soon: Worship Him Church's grand re-launch opening in 2026!</p></div>
   <header class="header">
     <a class="logo" href="index.html"><img src="images/WorshipHimChurch-Logo-PNG.png" alt=""><span>Worship Him Church</span></a>
     <button class="menu-button" aria-expanded="false" aria-controls="navigation">Menu</button>
@@ -28,37 +29,39 @@
         <source src="videos/hero-video.mp4" type="video/mp4">
       </video>
       <div class="hero-content">
-        <p>CHICAGO · TORONTO · MONTERREY</p>
+        <p>HARLINGEN · TEXAS</p>
         <h1>Welcome to<br>Worship Him Church</h1>
         <a class="button" href="next-steps.html">Plan your visit</a>
       </div>
     </section>
-    <section class="media-flix" aria-labelledby="media-flix-title">
-      <div class="media-heading">
-        <div>
-          <p class="label">WATCH ANYTIME</p>
-          <h2 id="media-flix-title">Media <span>Flix</span></h2>
-          <p class="media-intro">Messages, worship, and stories to meet you right where you are.</p>
+    <section class="sermon-video" aria-labelledby="sermon-video-title">
+      <div class="sermon-video-inner">
+        <div class="sermon-video-player" id="sermon-video-player">
+          <button class="sermon-video-play" id="sermon-video-play" type="button" aria-label="Play A Message for the Journey">
+            <span class="sermon-video-image">
+              <img src="https://i.ytimg.com/vi/GfVCLiWjIRg/hqdefault.jpg" alt="" loading="lazy">
+              <span class="media-play" aria-hidden="true">▶</span>
+            </span>
+          </button>
         </div>
-        <label class="media-search">
-          <span class="visually-hidden">Search videos</span>
-          <input id="media-search" type="search" placeholder="Search videos..." autocomplete="off">
-          <span aria-hidden="true">⌕</span>
-        </label>
+        <div class="sermon-video-info">
+          <p class="label">WATCH ANYTIME</p>
+          <h2 id="sermon-video-title">Sermon Video</h2>
+          <h3 class="sermon-video-subtitle">A Message for the Journey</h3>
+          <p class="sermon-video-description">Find encouragement and biblical teaching for every season of life. Watch this message from Worship Him Church and share it with someone who needs it.</p>
+          <nav class="sermon-social" aria-label="Follow Worship Him Church on social media">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.25-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.2c-.3 0-1.4-.2-2.6-.2-2.6 0-4.3 1.6-4.3 4.5v2.1H7v3.2h2.8V21h3.6z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg>
+            </a>
+          </nav>
+        </div>
       </div>
-      <div class="media-filters" role="group" aria-label="Filter videos by category">
-        <button class="media-filter active" type="button" data-category="All" aria-pressed="true">All</button>
-        <button class="media-filter" type="button" data-category="Messages" aria-pressed="false">Messages</button>
-        <button class="media-filter" type="button" data-category="Worship" aria-pressed="false">Worship</button>
-        <button class="media-filter" type="button" data-category="Stories" aria-pressed="false">Stories</button>
-        <button class="media-filter" type="button" data-category="More" aria-pressed="false">More</button>
-      </div>
-      <div class="media-row-heading">
-        <h3>Featured videos</h3>
-        <span>5 videos</span>
-      </div>
-      <div class="media-row" id="media-row" aria-live="polite"></div>
-      <p class="media-empty" id="media-empty" hidden>No videos match your search. Try another title or category.</p>
     </section>
     <section class="section">
       <p class="label">OUR HEART</p>
@@ -68,16 +71,22 @@
     </section>
     <section class="section dark">
       <p class="label">FIND YOUR PEOPLE</p>
-      <h2>One church. Three cities.</h2>
-      <div class="cards">
-        <article><img src="images/image-one.png" alt="Chicago skyline"><h3>Chicago</h3><p>Sundays at 9:30 AM and 11:30 AM</p></article>
-        <article><img src="images/image-two.png" alt="Toronto skyline"><h3>Toronto</h3><p>Sundays at 10:00 AM</p></article>
-        <article><img src="images/image-three.png" alt="Monterrey city and mountains"><h3>Monterrey</h3><p>Domingos a las 11:00 AM</p></article>
+      <h2>One church for the city's hope.</h2>
+      <div class="harlingen-location">
+        <img src="images/outside-church-design-image.jpeg" alt="Worship Him Church exterior in Harlingen, Texas">
+        <div class="harlingen-location-info">
+          <h3>Harlingen, Texas</h3>
+          <div class="service-times">
+            <article><h4>Sunday · 10:30 AM</h4><p>Family Service</p></article>
+            <article><h4>Wednesday · 6:30 PM</h4><p>Regular Service</p></article>
+            <article><h4>Friday · 6:30 PM</h4><p>Nursery, Toddlers, Children, &amp; Youth Service</p></article>
+          </div>
+        </div>
       </div>
       <a href="calendar.html">See the calendar →</a>
     </section>
     <section class="section feature">
-      <img src="images/service-image.png" alt="People worshipping together">
+      <img src="images/inside-church-design-image.jpeg" alt="People worshipping together">
       <div><p class="label">THERE'S A PLACE FOR YOU</p><h2>Life is better together.</h2><p>Find community, grow in faith, and use your gifts to make a difference.</p><a class="button" href="groups.html">Explore groups</a></div>
     </section>
     <section class="section callout">
@@ -107,15 +116,5 @@
     </div>
     <small>© <span data-year></span> Worship Him Church</small>
   </footer>
-  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" hidden>
-    <div class="video-modal-backdrop" data-close-video></div>
-    <div class="video-modal-content">
-      <div class="video-modal-header">
-        <h2 id="video-modal-title">Now playing</h2>
-        <button class="video-modal-close" type="button" aria-label="Close video player" data-close-video>×</button>
-      </div>
-      <div class="video-frame" id="video-frame"></div>
-    </div>
-  </div>
 </body>
 </html>
