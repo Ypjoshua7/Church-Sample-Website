@@ -1,2 +1,2 @@
-.page-banner { background-image: linear-gradient(#1118, #1118), url("images/service-image.png"); }
-.content > .button { margin-top: 22px; color: white; background: #222; text-decoration: none; }
+.page-banner { background-image: linear-gradient(#1118, #1118), url("images/outside-church-design-image.jpeg"); }
+.content > .button { margin-top: 22px; color: white; background: var(--color-primary); text-decoration: none; }
