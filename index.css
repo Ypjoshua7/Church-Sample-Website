@@ -4,6 +4,111 @@ a { color: inherit; }
 img { display: block; max-width: 100%; }
 .header { position: absolute; z-index: 2; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 22px 6%; color: white; }
 .logo { display: inline-flex; align-items: center; gap: 10px; font-weight: bold; letter-spacing: 2px; text-decoration: none; }
+
+
+.top-banner{
+    height:50px;
+    background:#0f0f0f;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 2rem;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    position:relative;
+    z-index:999;
+}
+
+.service-info{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+
+    font-size:.875rem;
+    font-weight:500;
+}
+
+.divider{
+    opacity:.4;
+}
+
+.top-icons{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.top-icons a{
+    color:#fff;
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    gap:.4rem;
+
+    transition:.3s ease;
+}
+
+.top-icons a:hover{
+    color:#d4af37;
+    transform:translateY(-2px);
+}
+
+.top-icons svg{
+    width:18px;
+    height:18px;
+    fill:currentColor;
+}
+
+.phone-link span{
+    font-size:.85rem;
+    font-weight:500;
+}
+
+/* Tablet */
+@media (max-width: 991px){
+
+    .top-banner{
+        justify-content:center;
+        padding:0 1rem;
+        height:45px;
+    }
+
+    .service-info{
+        display:none;
+    }
+
+    .phone-link{
+        display:none !important;
+    }
+
+    .top-icons{
+        width:100%;
+        justify-content:center;
+        gap:1.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+
+    .top-icons svg{
+        width:20px;
+        height:20px;
+    }
+
+    .top-icons{
+        gap:1rem;
+    }
+}
+``
+
+
+
 .header .logo img { width: 42px; height: 42px; object-fit: contain; filter: brightness(0) invert(1); }
 .header nav { display: flex; gap: 22px; }
 .header nav a { color: inherit; text-decoration: none; font-size: 13px; }
@@ -101,16 +206,37 @@ h2 { font-size: clamp(32px, 5vw, 56px); line-height: 1.1; }
   .footer small { grid-column: auto; width: 100%; }
 }
 
+@media (max-width: 1000px) {
+  .header { align-items: center; }
+  .menu-button { display: block; padding: 8px 12px; color: white; background: transparent; border: 1px solid white; }
+  .header nav { display: none; position: absolute; top: 65px; left: 0; right: 0; padding: 18px 6%; background: #171a18; }
+  .header nav.open { display: grid; gap: 14px; }
+}
+
 :root {
   --color-primary: #627769;
   --color-background: #fbf5e6;
   --color-accent: #c2d0bd;
   --color-ink: #62776c;
+  --contact-bar-height: 56px;
 }
 body { color: var(--color-ink); background: var(--color-background); }
-.announcement-bar { display: flex; min-height: 44px; align-items: center; justify-content: center; padding: 8px 6%; color: white; background: var(--color-primary); text-align: center; }
-.announcement-bar p { margin: 0; font-size: clamp(11px, 3.5vw, 14px); font-weight: bold; line-height: 1.4; white-space: nowrap; }
-.header { top: 44px; }
+.site-contact-bar { position: relative; z-index: 3; height: var(--contact-bar-height); padding: 0 5%; color: white; background: #014421; font-size: 12px; }
+.contact-bar-inner { display: grid; grid-template-columns: minmax(220px, 1.1fr) minmax(310px, 1.2fr) minmax(350px, 1.35fr); align-items: center; gap: 18px; width: min(100%, 1440px); height: 100%; margin: 0 auto; }
+.contact-bar-address, .contact-bar-links a { display: inline-flex; align-items: center; color: inherit; text-decoration: none; }
+.contact-bar-address { gap: 8px; white-space: nowrap; }
+.contact-bar-address svg, .contact-bar-links svg { flex: 0 0 auto; width: 17px; height: 17px; fill: currentColor; }
+.top-service-times { display: flex; flex-wrap: wrap; justify-content: center; gap: 3px 12px; line-height: 1.35; text-align: center; }
+.contact-bar-links { display: flex; align-items: center; justify-content: flex-end; gap: 11px; }
+.contact-bar-links a { min-height: 32px; justify-content: center; }
+.contact-bar-links a:hover, .contact-bar-address:hover { color: var(--color-accent); }
+.contact-bar-phone { gap: 6px; white-space: nowrap; }
+.contact-bar-links a:focus-visible, .contact-bar-address:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+.announcement-bar { display: flex; min-height: 44px; align-items: center; overflow: hidden; padding: 8px 0; color: white; background: #014421; text-align: center; }
+.announcement-track { display: flex; flex: 0 0 auto; width: max-content; margin: 0; animation: announcement-scroll 24s linear infinite; color: white; font-size: clamp(11px, 3.5vw, 14px); font-weight: bold; line-height: 1.4; white-space: nowrap; }
+.announcement-track span { padding: 0 3rem; }
+@keyframes announcement-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.header { top: calc(var(--contact-bar-height) + 44px); }
 .header .logo img { flex: 0 0 48px; width: 48px; height: 48px; object-fit: contain; filter: none; }
 .footer { display: grid; grid-template-columns: minmax(220px, 1.2fr) 1fr auto; align-items: center; gap: 26px; padding: 38px 8%; color: var(--color-background); background: var(--color-primary); }
 .footer .logo { display: inline-flex; }
@@ -159,6 +285,30 @@ body { color: var(--color-ink); background: var(--color-background); }
   .footer-navigation { gap: 12px 18px; }
   .footer-social { justify-content: center; }
   .footer small { grid-column: auto; width: 100%; }
+}
+
+@media (max-width: 1000px) {
+  :root { --contact-bar-height: 88px; }
+  .contact-bar-inner { grid-template-columns: minmax(0, 1fr) auto; gap: 0 16px; }
+  .top-service-times { grid-column: 1 / -1; grid-row: 2; }
+}
+
+@media (max-width: 640px) {
+  :root { --contact-bar-height: 122px; }
+  .site-contact-bar { padding: 8px 4%; }
+  .contact-bar-inner { display: flex; flex-direction: column; justify-content: center; gap: 5px; }
+  .contact-bar-address { font-size: 11px; }
+  .top-service-times { gap: 2px 9px; font-size: 11px; }
+  .contact-bar-links { gap: 12px; }
+  .contact-bar-links a { min-height: 28px; }
+  .contact-bar-links svg { width: 16px; height: 16px; }
+  .contact-bar-phone { font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-track { width: 100%; justify-content: center; animation: none; white-space: normal; }
+  .announcement-track span { padding: 0 8px; }
+  .announcement-track span[aria-hidden="true"] { display: none; }
 }
 
 .hero, .sermon-video, .section, .page-banner, .content {
