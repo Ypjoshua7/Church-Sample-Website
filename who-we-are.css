@@ -1,70 +1,77 @@
-.faith-banner {
+.about-hero {
   position: relative;
+  min-height: min(760px, 100dvh);
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(10, 30, 20, .84), rgba(10, 30, 20, .18)), url("images/outside-church-design-image.jpeg");
+  justify-content: center;
+  background-image:
+    linear-gradient(90deg, rgba(10, 28, 18, .88) 0%, rgba(10, 28, 18, .66) 48%, rgba(10, 28, 18, .12) 100%),
+    url("images/outside-church-design-image.jpeg");
+  background-position: center;
 }
-.faith-banner .label { color: #e4d1a3; }
-.faith-banner h1 { max-width: 760px; font-size: clamp(58px, 10vw, 112px); }
-.faith-banner-copy { max-width: 540px; margin: 20px 0 28px; font-size: clamp(18px, 2.2vw, 24px); }
-.faith-banner-button { color: #fff; background: #014421; }
-.faith-banner-button span { margin-left: 12px; }
-.faith-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
-  align-items: center;
-  gap: clamp(35px, 8vw, 110px);
-  padding: clamp(72px, 10vw, 140px) max(8%, calc((100% - 1180px) / 2));
-  background: #fbf5e6;
-}
-.faith-intro-content { max-width: 650px; }
-.faith-eyebrow { margin: 0 0 14px; color: #55725c; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-.faith-intro h2, .faith-section-heading h2, .faith-visit h2 { margin: 0 0 20px; color: #173c2a; font-size: clamp(36px, 5vw, 58px); line-height: 1.08; }
-.faith-intro-content > p:last-child { max-width: 620px; margin: 0; color: #4e5e52; font-size: 18px; line-height: 1.8; }
-.faith-statement { position: relative; padding: 38px clamp(26px, 4vw, 52px); color: #fff; background: #014421; box-shadow: 18px 18px 0 #e4d1a3; }
-.faith-statement-mark { display: block; height: 45px; color: #c2d0bd; font: 72px/1 Georgia, serif; }
-.faith-statement p { margin: 12px 0 25px; font: 28px/1.35 Georgia, serif; }
-.faith-statement-caption { color: #d3e0d4; font-size: 11px; font-weight: 700; letter-spacing: 1.8px; }
-.beliefs-section, .values-section { padding: clamp(72px, 9vw, 120px) max(7%, calc((100% - 1240px) / 2)); }
-.beliefs-section { background: #fff; }
-.faith-section-heading { max-width: 700px; margin: 0 auto 48px; text-align: center; }
-.faith-section-heading h2 { margin-bottom: 14px; }
-.faith-section-heading > p:last-child { margin: 0; color: #68746b; font-size: 17px; }
-.beliefs-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.belief-card { min-height: 250px; padding: 28px; border: 1px solid #e6e9e3; border-radius: 8px; background: #fbf5e6; transition: transform .2s ease, box-shadow .2s ease; }
-.belief-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px #173c2a14; }
-.belief-number { color: #6a876f; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; }
-.belief-card h3 { margin: 19px 0 9px; color: #173c2a; font-size: 23px; }
-.belief-card p { margin: 0 0 18px; color: #58665b; line-height: 1.7; }
-.belief-reference { color: #54755b; font-size: 12px; font-weight: 700; }
-.values-section { background: #edf1e9; }
-.values-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
-.values-grid article { padding: 26px 20px; border-radius: 8px; background: #fff; }
-.values-grid article > span { display: grid; width: 42px; height: 42px; place-items: center; color: #fff; background: #014421; border-radius: 50%; font-size: 22px; }
-.values-grid h3 { margin: 19px 0 8px; color: #173c2a; font-size: 18px; }
-.values-grid p { margin: 0; color: #58665b; font-size: 14px; line-height: 1.65; }
-.faith-visit { padding: clamp(72px, 10vw, 120px) 7%; color: #fff; background: #173c2a; text-align: center; }
-.faith-visit .faith-eyebrow { color: #c2d0bd; }
-.faith-visit h2 { color: #fff; }
-.faith-visit > p:not(.faith-eyebrow) { max-width: 560px; margin: 0 auto 28px; color: #e0e8df; font-size: 18px; }
-.faith-visit .button { background: #527a5d; }
+.about-hero .label { color: #e4d1a3; }
+.about-hero h1 { max-width: 760px; margin: 14px 0 20px; font-size: clamp(54px, 9vw, 104px); line-height: .98; }
+.about-hero-description { max-width: 620px; margin: 0 0 30px; color: #f3f5ef; font-size: clamp(17px, 2vw, 21px); line-height: 1.7; }
+.about-hero-button { color: white; background: #014421; }
+.about-hero-button span { margin-left: 12px; }
+.church-leaders { padding: clamp(70px, 9vw, 118px) max(6%, calc((100% - 1220px) / 2)); background: #fbf5e6; }
+.pastor-family { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(30px, 6vw, 76px); max-width: 1080px; margin: 0 auto clamp(76px, 9vw, 118px); }
+.pastor-family > img { display: block; width: 100%; min-height: 340px; max-height: 470px; object-fit: cover; object-position: center 35%; border-radius: 10px; box-shadow: 16px 16px 0 #e4d1a3; }
+.pastor-family-copy h2 { margin: 0 0 20px; color: #173c2a; font-size: clamp(34px, 4vw, 48px); line-height: 1.1; }
+.pastor-family-copy > p:not(.about-eyebrow) { margin: 0 0 15px; color: #58665b; font-size: 16px; line-height: 1.8; }
+.leaders-heading { max-width: 710px; margin: 0 auto 52px; text-align: center; }
+.about-eyebrow { margin: 0 0 13px; color: #55725c; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+.leaders-heading h2, .about-visit h2 { margin: 0 0 15px; color: #173c2a; font-size: clamp(38px, 5vw, 58px); line-height: 1.08; }
+.leaders-heading > p:last-child { margin: 0; color: #667167; font-size: 17px; line-height: 1.75; }
+.leader-card { overflow: hidden; border: 1px solid #e6e9e3; border-radius: 10px; background: #fff; box-shadow: 0 12px 32px rgba(23, 60, 42, .07); transition: transform .22s ease, box-shadow .22s ease; }
+.leader-card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(23, 60, 42, .13); }
+.leader-card img { display: block; width: 100%; height: 300px; object-fit: cover; object-position: center 32%; background: #e7ece5; }
+.leader-card-copy { padding: 21px 23px 24px; }
+.leader-card h3 { margin: 0; color: #173c2a; font-size: 22px; line-height: 1.25; }
+.leader-role { margin: 7px 0 0; color: #58765e; font-size: 14px; font-weight: 700; }
+.leader-card-featured { display: grid; grid-template-columns: minmax(260px, .75fr) 1.25fr; max-width: 860px; min-height: 360px; margin: 0 auto 26px; }
+.leader-card-featured img { height: 100%; min-height: 360px; max-height: 460px; object-position: center 28%; }
+.leader-card-featured .leader-card-copy { align-self: center; padding: clamp(28px, 5vw, 62px); }
+.leader-card-eyebrow { margin: 0 0 14px; color: #66836b; font-size: 11px; font-weight: 700; letter-spacing: 1.8px; }
+.leader-card-featured h3 { font-size: clamp(30px, 4vw, 44px); }
+.leader-card-featured .leader-role { margin-top: 10px; }
+.leader-description { max-width: 400px; margin: 20px 0 0; color: #667167; font-size: 16px; line-height: 1.75; }
+.leaders-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.leaders-grid .leader-card img { height: 260px; }
+.leaders-grid .leader-card-copy { min-height: 102px; }
+.about-visit { padding: clamp(68px, 9vw, 105px) 7%; color: #fff; background: #014421; text-align: center; }
+.about-visit .about-eyebrow { color: #c2d0bd; }
+.about-visit h2 { color: #fff; }
+.about-visit > p:not(.about-eyebrow) { max-width: 550px; margin: 0 auto 26px; color: #e0e8df; font-size: 18px; line-height: 1.65; }
+.about-visit .button { background: #5d7c62; }
 
-@media (max-width: 900px) {
-  .faith-intro { grid-template-columns: 1fr; }
-  .faith-statement { max-width: 600px; }
-  .beliefs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1000px) {
+  .leaders-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .leaders-grid .leader-card img { height: 250px; }
 }
 
-@media (max-width: 600px) {
-  .faith-banner { justify-content: center; }
-  .faith-intro, .beliefs-section, .values-section { padding-right: 7%; padding-left: 7%; }
-  .faith-intro-content > p:last-child { font-size: 16px; }
-  .faith-statement { padding: 30px 26px; }
-  .faith-statement p { font-size: 24px; }
-  .beliefs-grid, .values-grid { grid-template-columns: 1fr; }
-  .belief-card { min-height: 0; }
+@media (max-width: 760px) {
+  .about-hero { min-height: 670px; padding-right: 7%; padding-left: 7%; background-position: 58% center; }
+  .church-leaders { padding-right: 7%; padding-left: 7%; }
+  .pastor-family { grid-template-columns: 1fr; gap: 34px; margin-bottom: 76px; }
+  .pastor-family > img { min-height: 0; max-height: 430px; aspect-ratio: 4 / 3; }
+  .leaders-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+  .leaders-grid .leader-card img { height: 240px; }
+}
+
+@media (max-width: 560px) {
+  .about-hero { min-height: 620px; }
+  .about-hero h1 { font-size: clamp(48px, 14vw, 68px); }
+  .leaders-heading { margin-bottom: 36px; }
+  .leader-card-featured { grid-template-columns: 1fr; }
+  .leader-card-featured img { height: 320px; min-height: 0; }
+  .leader-card-featured .leader-card-copy { padding: 26px; }
+  .leaders-grid { grid-template-columns: 1fr; gap: 16px; }
+  .leaders-grid .leader-card { display: grid; grid-template-columns: minmax(105px, .75fr) 1fr; align-items: center; }
+  .leaders-grid .leader-card img { height: 150px; }
+  .leaders-grid .leader-card-copy { min-height: 0; padding: 16px; }
+  .leaders-grid .leader-card h3 { font-size: 19px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .belief-card { transition: none; }
+  .leader-card { transition: none; }
 }
