@@ -1,18 +1,21 @@
 .about-hero {
   position: relative;
-  min-height: min(760px, 100dvh);
+  min-height: clamp(620px, 78svh, 840px);
   align-items: flex-start;
   justify-content: center;
   background-image:
     linear-gradient(90deg, rgba(10, 28, 18, .88) 0%, rgba(10, 28, 18, .66) 48%, rgba(10, 28, 18, .12) 100%),
     url("images/outside-church-design-image.jpeg");
-  background-position: center;
+  background-position: center 42%;
 }
 .about-hero .label { color: #e4d1a3; }
 .about-hero h1 { max-width: 760px; margin: 14px 0 20px; font-size: clamp(54px, 9vw, 104px); line-height: .98; }
 .about-hero-description { max-width: 620px; margin: 0 0 30px; color: #f3f5ef; font-size: clamp(17px, 2vw, 21px); line-height: 1.7; }
 .about-hero-button { color: white; background: #014421; }
 .about-hero-button span { margin-left: 12px; }
+@media (max-width: 760px) {
+  .about-hero { min-height: clamp(600px, 82svh, 740px); padding-top: 175px; }
+}
 .church-leaders { padding: clamp(70px, 9vw, 118px) max(6%, calc((100% - 1220px) / 2)); background: #fbf5e6; }
 .pastor-family { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(30px, 6vw, 76px); max-width: 1080px; margin: 0 auto clamp(76px, 9vw, 118px); }
 .pastor-family > img { display: block; width: 100%; min-height: 340px; max-height: 470px; object-fit: cover; object-position: center 35%; border-radius: 10px; box-shadow: 16px 16px 0 #e4d1a3; }
@@ -74,4 +77,34 @@
 
 @media (prefers-reduced-motion: reduce) {
   .leader-card { transition: none; }
+}
+
+.header {
+  position: absolute;
+  z-index: 2;
+  top: calc(var(--contact-bar-height) + 44px);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 6%;
+  color: white;
+}
+.header .logo img { flex: 0 0 48px; width: 48px; height: 48px; object-fit: contain; }
+.header nav { display: flex; gap: 22px; }
+.header nav a { color: inherit; font-size: 13px; text-decoration: none; }
+.header nav a:hover { color: var(--color-accent); }
+.menu-button { display: none; }
+.header a:focus-visible { outline: 2px solid white; outline-offset: 4px; }
+
+@media (max-width: 1000px) {
+  .header { align-items: center; }
+  .menu-button { display: block; padding: 8px 12px; color: white; background: transparent; border: 1px solid white; }
+  .header nav { position: absolute; top: 65px; right: 0; left: 0; display: none; padding: 18px 6%; background: #171a18; }
+  .header nav.open { display: grid; gap: 14px; }
+}
+
+@media (max-width: 760px) {
+  .header .logo { max-width: calc(100% - 88px); white-space: normal; font-size: 13px; letter-spacing: 1.2px; }
+  .header .logo img { flex-basis: 42px; width: 42px; height: 42px; }
 }
