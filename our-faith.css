@@ -23,7 +23,7 @@
   padding: clamp(72px, 10vw, 140px) max(8%, calc((100% - 1180px) / 2));
   background: #fbf5e6;
 }
-.faith-intro-content { max-width: 650px; }
+.faith-intro-content { max-width: 650px; font-family: 'Inter', system-ui, sans-serif;}
 .faith-eyebrow { margin: 0 0 14px; color: #55725c; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 .faith-intro h2, .faith-section-heading h2, .faith-visit h2 { margin: 0 0 20px; color: #173c2a; font-size: clamp(36px, 5vw, 58px); line-height: 1.08; }
 .faith-intro-content > p:last-child { max-width: 620px; margin: 0; color: #4e5e52; font-size: 18px; line-height: 1.8; }
