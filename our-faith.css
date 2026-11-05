@@ -15,6 +15,7 @@
   .faith-banner h1 { font-size: clamp(58px, 13vw, 82px); }
 }
 .faith-intro {
+  font-family: 'Inter', system-ui, sans-serif;
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
   align-items: center;
